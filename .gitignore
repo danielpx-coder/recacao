@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+dist/
+build/
+*.spec.bak
+*.db-journal
+*.db-wal
+*.db-shm
+.local/
