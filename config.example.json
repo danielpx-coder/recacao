@@ -1,0 +1,49 @@
+{
+  "app_name": "Danaurium Redação Studio",
+  "version": "1.0.0",
+  "language": "pt-BR",
+  "theme": "light",
+  "storage": {
+    "windows_path": "%LOCALAPPDATA%\\DanauriumRedacaoStudio",
+    "keyring_service": "DanauriumRedacaoStudio",
+    "backup_retention_days": 30
+  },
+  "budget_defaults": {
+    "daily_limit_usd": "10.00",
+    "monthly_limit_usd": "100.00",
+    "project_limit_usd": "5.00",
+    "strict_free_mode": false,
+    "strict_budget_mode": false,
+    "usd_to_brl_rate": "5.50",
+    "usd_to_brl_date": "2026-09-27"
+  },
+  "connections_example": [
+    {
+      "name": "OpenAI Oficial",
+      "provider_type": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "catalog_path": "/models",
+      "generation_path": "/chat/completions",
+      "timeout_seconds": 60,
+      "max_retries": 3
+    },
+    {
+      "name": "Anthropic Claude",
+      "provider_type": "anthropic",
+      "base_url": "https://api.anthropic.com/v1",
+      "catalog_path": "/models",
+      "generation_path": "/messages",
+      "timeout_seconds": 60,
+      "max_retries": 3
+    },
+    {
+      "name": "OpenRouter",
+      "provider_type": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "catalog_path": "/models",
+      "generation_path": "/chat/completions",
+      "timeout_seconds": 60,
+      "max_retries": 3
+    }
+  ]
+}
