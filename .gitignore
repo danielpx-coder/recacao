@@ -9,3 +9,7 @@ build/
 *.db-wal
 *.db-shm
 .local/
+
+# Ambientes virtuais criados pelos scripts de inicializacao
+.venv/
+venv/
