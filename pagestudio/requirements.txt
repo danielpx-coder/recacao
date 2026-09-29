@@ -1,0 +1,22 @@
+# ============================================================================
+#  RD5 PageStudio 2.0 - dependencias
+# ----------------------------------------------------------------------------
+#  O editor funciona SO com a biblioteca padrao do Python (Tkinter), que ja
+#  vem com o Python para Windows. Tudo abaixo e OPCIONAL.
+#
+#  Como instalar (o iniciar_pagestudio.bat faz isso sozinho):
+#      python -m venv .venv
+#      .venv\Scripts\activate
+#      pip install -r requirements.txt
+# ============================================================================
+
+# Visualizacao embutida na aba "Visualizar" (motor HTML Tkhtml3).
+# Verificado com a serie 4.x, que aceita HtmlFrame(..., messages_enabled=False)
+# e load_html(html, base_url=...).
+# Sem este pacote o PageStudio continua funcionando: ele abre a pagina no
+# navegador padrao (F12) e mostra um botao na propria aba.
+tkinterweb>=4.20.0
+
+# --- desenvolvimento (testes e empacotamento) -------------------------------
+pytest>=8.0.0
+pyinstaller>=6.4.0

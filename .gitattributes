@@ -1,0 +1,20 @@
+# Scripts de inicialização do Windows precisam manter as quebras CRLF no
+# próprio repositório (e não apenas no checkout), porque o download em .zip
+# do GitHub entrega o conteúdo cru do índice — e o cmd.exe pode se perder
+# com LF. Por isso vão como binários: o git não converte nada neles.
+*.bat -text -diff
+*.cmd -text -diff
+*.ps1 text eol=crlf
+
+# Shell scripts sempre com LF.
+*.sh  text eol=lf
+
+# Código-fonte e textos: como o usuário preferir no git, LF no repositório.
+*.py  text
+*.md  text
+*.txt text
+
+# Binários: nunca converter.
+*.png binary
+*.jpg binary
+*.ico binary

@@ -1,3 +1,18 @@
+# Repositório — aplicativos desktop em Python
+
+Este repositório contém dois aplicativos independentes:
+
+| Aplicativo | Pasta | Interface | Como abrir no Windows |
+|------------|-------|-----------|-----------------------|
+| **RD5 PageStudio 2.0** — editor de páginas HTML no estilo do antigo FrontPage | [`pagestudio/`](pagestudio/) | Tkinter (biblioteca padrão) | dois cliques em `pagestudio\iniciar_pagestudio.bat` |
+| **Danaurium Redação Studio** — estúdio de redação jornalística com IA | raiz (`danaurium/`) | PySide6 (Qt6) | `python -m danaurium.app` |
+
+O `iniciar_pagestudio.bat` cria o ambiente virtual em `pagestudio\.venv`, instala o
+`pagestudio\requirements.txt`, ativa o venv e abre o editor — tudo em um clique.
+Detalhes, recursos e testes do PageStudio: [`pagestudio/README.md`](pagestudio/README.md).
+
+---
+
 # Danaurium Redação Studio
 
 > Aplicativo desktop em Python e PySide6 para jornalistas, assessores de imprensa e comunicadores institucionais.  
